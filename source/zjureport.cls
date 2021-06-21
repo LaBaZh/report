@@ -20,6 +20,7 @@
 \RequirePackage{fontspec}
 \RequirePackage{booktabs}
 \RequirePackage{caption}
+\RequirePackage{underscore}
 
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
@@ -60,7 +61,7 @@
     stepnumber = 2,                 %间隔一行进行编号
     numbersep = 10pt,               %行号与代码的距离
     %Code design
-    keywordstyle=\color{purple},
+    keywordstyle=\color{blue},
     commentstyle=\color{gray},
     stringstyle=\color{green!60!black},
     breaklines=true,
