@@ -113,7 +113,7 @@
   \hfill
   \begin{minipage}{.3\linewidth}
     \raggedleft
-    \begin{tabular*}{.8\linewidth}{ll}
+    \begin{tabular*}{.8\linewidth}{lc}
       专业： & \zjuu[70pt]\@major   \\
       姓名： & \zjuu[70pt]\@name    \\
       学号： & \zjuu[70pt]\@stuid   \\
