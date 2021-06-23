@@ -22,6 +22,7 @@
 \RequirePackage{booktabs}
 \RequirePackage{caption}
 \RequirePackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\RequirePackage{underscore}
 
 %设置行间距
 \linespread{1.5}
