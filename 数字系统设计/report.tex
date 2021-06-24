@@ -344,7 +344,9 @@ endmodule
         \end{figure}
 
         \subsubsection{结果分析}
-        由图可见，随着k值增大，sample信号频率逐渐增大，符合DDS模块要求
+        因为$f_o = \frac{K\times f_c}{2^m}$，所以当K值增大时，DDS模块输出的f值应该增加。
+
+        在图中可以看出，k值越大，sample信号峰值之间的距离越小，频率越大，符合DDS模块要求。
 
     \subsection{mcu模块}
         \subsubsection{仿真图}
@@ -355,8 +357,14 @@ endmodule
         \end{figure}
 
         \subsubsection{结果分析}
-        由圆圈1中波形可知，play_pause信号工作正常，能够正常输出play信号；由源泉2中波形可知，next信号工作正常；由圆圈3中波形可知，歌曲结束时的切换正常
-        \newpage
+        由圆圈1中波形可知，当输入一个play_pause信号后，mcu的播放信号进行了反转，说明play_puase信号能够正确控制乐曲播放的暂停与否；
+        
+        由源泉2中波形可知，当按下了next按键输入了next信号后，首先play信号在下一时钟周期切换为0，同时输出一个长度为一时钟周期的reset_player信号将song_reader与note_player模块复位，在下一时钟周期，歌曲编号song增加1，使song_reader模块开始读取下一首歌的音符。由此可见，mcu控制切换下一首歌的功能正常。
+        
+        由圆圈3中波形可知，当mcu得到来自song_reader的song_done信号后，能够将play信号切换到0，并且输出一个reset_play信号将song_reader模块复位至乐曲的开始部分，由此，mcu控制歌曲结束功能正常。
+
+        观察圆圈4中的song信号，我们可以发现在歌曲编号到3之后再次输入next信号会回到编号为0的歌曲，这保证了音乐播放器能够重复播放。
+        
 
     \subsection{song_reader模块}
         \subsubsection{仿真图}
@@ -367,10 +375,15 @@ endmodule
         \end{figure}
 
         \subsubsection{结果分析}
-        由波形图中可以看出，当输入音符的duration为0时，song_reader模块能够正确输出一个song_done信号，符合设计要求
+        观察波形图方框中的数值，将其与song_rom中00-31位置的值进行对比，可以发现值完全相等，这说明了song_reader能够正确地从song_rom中读取出音符，将其送入note_player模块；
+
+        观察最后的方框，可以发现，当duration为0时，song_reader向muc模块发出来一个song_done信号。
+
+        上诉说明song_reader模块工作正常。
     
     \subsection{note_player模块}
         \subsubsection{仿真图}
+        见图4
         \begin{figure}[htp]
             \centering
             \includegraphics[width = 0.9\textwidth]{noteplayer.png}
@@ -404,7 +417,7 @@ endmodule
     但是next_button 、 play_pause_button信号的值不同会影响系统状态的转换。如果next_button不进行消颤动及同步化处理，系统可能会接收到很多个next_button信号，这就会导致跳过了很多首歌，无法达到切换下一首的目标；同理，如果play_pause_button不进行相应处理，会导致歌曲断断续续，不够连贯。不仅达不到预期效果，同时更会加剧系统的损耗
 
     \subsection{在主控制器(mcu)设计中，是否存在接收不到按键信息？若存在，概率多大？有没必要修改设计？}
-    存在。在RESET->PAUSE以及NEXT->PLAY状态切换的过程中，mcu无法接收到按键输入。因为这两个状态都只有一个始终节拍，所以概率很好，没有必要修改设计。
+    存在。在RESET->PAUSE以及NEXT->PLAY状态切换的过程中，mcu无法接收到按键输入。但是因为这两个状态都只有一个始终节拍，所以概率很小，没有必要修改设计。
 
 \section{心得体会}
 本次实验带给我的第一个感受就是完事开头难。相比于前面做的实验，这个实验无论是代码量还是难度都是远超其余实验的，而且数电实验书也不像前面几个实验的部分一样保姆级教程，使得我最开始拿到题目的时候不知道从何处开始。最终，花费了一个下午加一个晚上搞懂了DDS模块的原理以及完成了响应代码的编写，在DDS模块过了测试之后，顿时就对这个实验有了更多的信心。于是，在接下来的一天里，通过学习教材并不断试错，最终用半天时间完成了第一版代码的编写。
