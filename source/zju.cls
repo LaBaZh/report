@@ -2,7 +2,6 @@
 \LoadClass{ctexart}
 
 \RequirePackage{xeCJK}
-\RequirePackage{CJKnumb}
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
 \RequirePackage{titlesec}

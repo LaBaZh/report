@@ -1,4 +1,3 @@
-
 \LoadClass{ctexart}
 \RequirePackage{ctex}
 \RequirePackage{graphicx}
@@ -20,12 +19,10 @@
 \RequirePackage{booktabs}
 \RequirePackage{caption}
 \RequirePackage{underscore}
-%\RequirePackage{CJKnumb}
 
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
 \setcounter{secnumdepth}{3}
-% \renewcommand\thesection{\CJKnumber{\arabic{section}}、}
 \renewcommand\thesubsection{\arabic{subsection}.}
 \renewcommand\thesubsubsection{\thesubsection\arabic{subsubsection}}
 \setlist[enumerate,1]{label=(\arabic*)}
