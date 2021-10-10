@@ -19,10 +19,12 @@
 \RequirePackage{booktabs}
 \RequirePackage{caption}
 \RequirePackage{underscore}
+\RequirePackage{zhnumber}
 
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
 \setcounter{secnumdepth}{3}
+\renewcommand\thesection{\zhnum{section}}
 \renewcommand\thesubsection{\arabic{subsection}.}
 \renewcommand\thesubsubsection{\thesubsection\arabic{subsubsection}}
 \setlist[enumerate,1]{label=(\arabic*)}
@@ -93,9 +95,9 @@
 
 % 页眉
 \pagestyle{fancy}
-\lhead{实验名称：\@expname}
-\chead{姓名：\@name}
-\rhead{学号：\@stuid}
+\lhead{实验名称:\@expname}
+\chead{姓名:\@name}
+\rhead{学号:\@stuid}
 
 % 下划线定义
 \def\zjuu[#1]#2{
