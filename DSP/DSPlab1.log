@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.29)  10 OCT 2021 17:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.29)  11 OCT 2021 08:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -650,7 +650,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Overfull \hbox (15.47433pt too wide) detected at line 18
- \TU/lmr/m/n/10.53937 2021 \TU/SimSun(0)/m/n/10.53937 年 \TU/lmr/m/n/10.53937 10 \TU/SimSun(0)/m/n/10.53937 月 \TU/lmr/m/n/10.53937 10 \TU/SimSun(0)/m/n/10.53937 日 
+ \TU/lmr/m/n/10.53937 2021 \TU/SimSun(0)/m/n/10.53937 年 \TU/lmr/m/n/10.53937 10 \TU/SimSun(0)/m/n/10.53937 月 \TU/lmr/m/n/10.53937 11 \TU/SimSun(0)/m/n/10.53937 日 
  []
 
 
@@ -750,6 +750,10 @@ File: figure/实指数序列_a=09,length=10.png Graphic file (type bmp)
 <figure/实指数序列_a=09,length=10.png>
 File: figure/频谱_实指数序列_a=09,length=10.png Graphic file (type bmp)
 <figure/频谱_实指数序列_a=09,length=10.png>
+File: figure/实指数序列_a=09,length=20.png Graphic file (type bmp)
+<figure/实指数序列_a=09,length=20.png>
+File: figure/频谱_实指数序列_a=09,length=20.png Graphic file (type bmp)
+<figure/频谱_实指数序列_a=09,length=20.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -759,10 +763,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [6]
-File: figure/实指数序列_a=09,length=20.png Graphic file (type bmp)
-<figure/实指数序列_a=09,length=20.png>
-File: figure/频谱_实指数序列_a=09,length=20.png Graphic file (type bmp)
-<figure/频谱_实指数序列_a=09,length=20.png>
 File: figure/复指数序列.png Graphic file (type bmp)
 <figure/复指数序列.png>
 File: figure/频谱_复指数序列.png Graphic file (type bmp)
@@ -801,6 +801,10 @@ File: figure/复合函数序列_phi=90.png Graphic file (type bmp)
 <figure/复合函数序列_phi=90.png>
 File: figure/频谱_复合函数序列_phi=90.png Graphic file (type bmp)
 <figure/频谱_复合函数序列_phi=90.png>
+File: figure/复合函数序列_phi=180.png Graphic file (type bmp)
+<figure/复合函数序列_phi=180.png>
+File: figure/频谱_复合函数序列_phi=180.png Graphic file (type bmp)
+<figure/频谱_复合函数序列_phi=180.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -810,11 +814,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [9]
-File: figure/复合函数序列_phi=180.png Graphic file (type bmp)
-<figure/复合函数序列_phi=180.png>
-File: figure/频谱_复合函数序列_phi=180.png Graphic file (type bmp)
-<figure/频谱_复合函数序列_phi=180.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -832,10 +831,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11] (./DSPlab1.aux) ) 
 Here is how much of TeX's memory you used:
- 14195 strings out of 476919
- 313643 string characters out of 5825424
+ 14196 strings out of 476919
+ 313653 string characters out of 5825424
  1095056 words of memory out of 5000000
- 33890 multiletter control sequences out of 15000+600000
+ 33891 multiletter control sequences out of 15000+600000
  406597 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  115i,14n,118p,1198b,2384s stack positions out of 5000i,500n,10000p,200000b,80000s
