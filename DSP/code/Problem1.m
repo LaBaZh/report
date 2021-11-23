@@ -6,7 +6,7 @@
 [x_11 , n_11] = realExpSeq(0.5 , 10);
 %a = 0.9 , length = 10
 [x_12 , n_12] = realExpSeq(0.9 , 10);
-%a = 0.9 , length = 20
+%a = 0.9 , length = 10
 [x_13 , n_13] = realExpSeq(0.9 , 20);
 
 %复指数序列
@@ -31,8 +31,8 @@
 %%
 %调用plotPart函数绘制序列的实部虚部模和相位
 
-%实指数序列1
-plotPart(x_11 , n_11 , '实指数序列_a=05,length=10')
+%实指数序列6
+plotPart(x_11 , n_11 , '实指数序列_a=05,length=1x0')
 %实指数序列2
 plotPart(x_12 , n_12 , '实指数序列_a=09,length=10')
 %实指数序列3

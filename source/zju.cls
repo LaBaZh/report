@@ -1,7 +1,7 @@
 \ProvidesClass{zju}
 \LoadClass{ctexart}
 
-\RequirePackage{xeCJK}
+
 \RequirePackage{graphicx}
 \RequirePackage{geometry}
 \RequirePackage{titlesec}

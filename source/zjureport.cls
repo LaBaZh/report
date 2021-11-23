@@ -20,6 +20,7 @@
 \RequirePackage{caption}
 \RequirePackage{underscore}
 \RequirePackage{zhnumber}
+\RequirePackage[framed,numbered,autolinebreaks,useliterate]{mcode}
 
 \linespread{1.2}
 \geometry{top=1in,bottom=1in,left=1in,right=1in}
