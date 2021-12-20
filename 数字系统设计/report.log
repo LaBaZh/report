@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.29)  16 OCT 2021 21:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.29)  13 DEC 2021 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -481,6 +481,21 @@ Package caption Info: subfigure package is loaded.
 ) (d:/texlive/2021/texmf-dist/tex/latex/underscore/underscore.sty
 Package: underscore 2006/09/13
 LaTeX Info: Redefining \_ on input line 42.
+) (d:/texlive/2021/texmf-dist/tex/latex/mcode/mcode/mcode.sty
+-- Package: `mcode' 2.7 <2015/11/11> --
+Package: mcode 2015/11/11 2.7
+ - settings optimized for display (colour formating)
+ - line numbering enabled
+ - literate programming (character replacements) enabled
+ - automatic line breaking enabled (careful, buggy!)
+ - framed listings
+\lbreakdots=\box61
+LaTeX Font Info:    Trying to load font information for TU+pcr on input line 230.
+LaTeX Font Info:    No file TUpcr.fd. on input line 230.
+
+LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 230.
+
 )
 
 Package xeCJK Warning: Redefining CJKfamily `\CJKrmdefault'
@@ -524,8 +539,7 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 File: lstlang3.sty 2020/03/24 1.8d listings language file
 ) (d:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-))
-No file report.aux.
+)) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -544,7 +558,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 17.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -656,7 +670,7 @@ File: ../logo/head.jpg Graphic file (type bmp)
 <../logo/head.jpg>
 
 Overfull \hbox (15.47433pt too wide) detected at line 19
- \TU/lmr/m/n/10.53937 2021 \TU/SimSun(0)/m/n/10.53937 年 \TU/lmr/m/n/10.53937 10 \TU/SimSun(0)/m/n/10.53937 月 \TU/lmr/m/n/10.53937 16 \TU/SimSun(0)/m/n/10.53937 日 
+ \TU/lmr/m/n/10.53937 2021 \TU/SimSun(0)/m/n/10.53937 年 \TU/lmr/m/n/10.53937 12 \TU/SimSun(0)/m/n/10.53937 月 \TU/lmr/m/n/10.53937 13 \TU/SimSun(0)/m/n/10.53937 日 
  []
 
 
@@ -758,7 +772,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[8]) (./code/timer.v
+[8]
+Overfull \hbox (104.82982pt too wide) in paragraph at lines 24--26
+[][][][][][][][][][][][][]  
+ []
+
+) (./code/timer.v
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -783,9 +802,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [11] (./code/synch.v)
-File: figure//dds.png Graphic file (type bmp)
-<figure//dds.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -794,6 +810,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [12]
+File: figure//dds.png Graphic file (type bmp)
+<figure//dds.png>
 File: figure//mcu.png Graphic file (type bmp)
 <figure//mcu.png>
 
@@ -809,8 +827,6 @@ File: figure//songreader.png Graphic file (type bmp)
 <figure//songreader.png>
 File: figure//noteplayer.png Graphic file (type bmp)
 <figure//noteplayer.png>
-File: figure//top.png Graphic file (type bmp)
-<figure//top.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -820,6 +836,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [14]
+File: figure//top.png Graphic file (type bmp)
+<figure//top.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
@@ -843,14 +862,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[17] (./report.aux) ) 
+[17] (./report.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 13873 strings out of 476919
- 310158 string characters out of 5825424
- 1024055 words of memory out of 5000000
- 33586 multiletter control sequences out of 15000+600000
+ 13940 strings out of 476919
+ 311081 string characters out of 5825424
+ 935449 words of memory out of 5000000
+ 33645 multiletter control sequences out of 15000+600000
  411272 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 115i,14n,118p,1197b,2051s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,14n,118p,1197b,2094s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on report.pdf (17 pages).
