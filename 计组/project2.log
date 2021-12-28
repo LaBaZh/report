@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.29)  24 DEC 2021 00:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.29)  28 DEC 2021 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,14 +903,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  13744 strings out of 476919
  304721 string characters out of 5825424
- 914451 words of memory out of 5000000
+ 919451 words of memory out of 5000000
  33449 multiletter control sequences out of 15000+600000
  411280 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

@@ -65,8 +65,8 @@ module cache_controller (
             end
 
             Allocate : begin
+                read_l2=1;
                 if(l2_ack)begin
-                    read_l2=1;
                     nextstate = CompareTag;
                 end
                 else begin
